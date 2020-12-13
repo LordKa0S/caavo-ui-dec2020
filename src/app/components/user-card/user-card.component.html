@@ -1,0 +1,11 @@
+<div class="user-container" (click)="toggleUserSelection()">
+    <div class="photo">
+        <img [src]="user.Image" alt="User Image">
+    </div>
+    <div class="check" *ngIf="user.selected">
+        <mat-icon>done</mat-icon>
+    </div>
+    <div class="name">
+        <span>{{user.name}}</span>
+    </div>
+</div>

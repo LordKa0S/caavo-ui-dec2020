@@ -31,6 +31,7 @@
               "src/assets"
             ],
             "styles": [
+              "src/app/themes/caavo-theme.scss",
               "src/styles.scss"
             ],
             "scripts": []
@@ -100,15 +101,11 @@
           }
         },
         "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
+          "builder": "@angular-eslint/builder:lint",
           "options": {
-            "tsConfig": [
-              "tsconfig.app.json",
-              "tsconfig.spec.json",
-              "e2e/tsconfig.json"
-            ],
-            "exclude": [
-              "**/node_modules/**"
+            "lintFilePatterns": [
+              "src/**/*.ts",
+              "src/**/*.html"
             ]
           }
         },
@@ -127,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "caavo-ui-dec2020"
+  "defaultProject": "caavo-ui-dec2020",
+  "cli": {
+    "analytics": "8cc82653-cc4e-4e3c-a67b-0e5dd2092374"
+  }
 }
