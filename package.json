@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --prod --base-href caavo-ui-dec2020",
     "test": "ng test",
     "lint": "ng lint caavo-ui-dec2020",
     "e2e": "ng e2e"
